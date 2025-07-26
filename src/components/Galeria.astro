@@ -1,0 +1,44 @@
+---
+import "photoswipe/style.css";
+---
+
+<div
+  class="pswp-gallery grid grid-cols-2 md:grid-cols-4 max-w-6xl gap-8 mx-auto py-8"
+  id="gallery"
+>
+  {
+    Array.from({ length: 16 }).map((_, i) => (
+      <a
+        class="group rounded-xl hover:scale-105 transition-all relative"
+        href={`/img/estilos/img-${i + 1}.jpg`}
+        target="_blank"
+        data-pswp-width="1875"
+        data-pswp-height="2500"
+      >
+        <img
+          class="blur-lg absolute inset-0 transition group-hover:contrast-150 opacity-70 -z-10"
+          loading="lazy"
+          src={`/img/estilos/img-${i + 1}.jpg`}
+          alt=""
+        />
+        <img
+          class="rounded-xl"
+          loading="lazy"
+          src={`/img/estilos/img-${i + 1}.jpg`}
+          alt=""
+        />
+      </a>
+    ))
+  }
+</div>
+
+<script>
+  import PhotoSwipeLightbox from "photoswipe/lightbox";
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: "#gallery",
+    children: "a",
+    pswpModule: () => import("photoswipe"),
+  });
+  lightbox.init();
+</script>

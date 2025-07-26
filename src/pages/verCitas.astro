@@ -1,0 +1,14 @@
+---
+import Layout from "../layouts/Layout.astro";
+import CalendarSwitcher from "../components/CalendarSwitcher.jsx";
+---
+
+<Layout title="Ver citas" showHeader={true}>
+  <h2
+    class="py-8 text-center text-2xl lg:text-3xl tracking-tight font-extrabold text-white"
+  >
+    VER CITAS
+  </h2>
+
+  <CalendarSwitcher client:load />
+</Layout>
