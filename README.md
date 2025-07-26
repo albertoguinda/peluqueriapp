@@ -22,6 +22,7 @@
 
 ## 📂 Estructura
 
+```bash
 /
 ├── public/ # Assets estáticos (img, logo, favicons)
 ├── src/
@@ -33,6 +34,7 @@
 ├── tailwind.config.mjs
 ├── tsconfig.json
 └── README.md
+```
 
 ---
 
