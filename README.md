@@ -39,9 +39,13 @@
 ## ⚙️ Funcionalidades
 
 1. **Página de inicio**
+
    - Slider de imágenes del salón (Swiper + PhotoSwipe).
+
 2. **Reservar cita** (`/pedirCita`)
+
    - Calendario embebido (iframe de Calendly).
+
 3. **Ver mis citas** (`/verCitas`)
    - Listado de próximas reservas en un componente Astro.
 
@@ -54,7 +58,9 @@ git clone https://github.com/albertoguinda/peluqueriapp.git
 cd peluqueriapp
 npm install
 npm run dev
+
 # Abre http://localhost:3000
+
 📈 Métricas y optimización
 Lighthouse score: 95/100 en Performance y Accessibility
 
