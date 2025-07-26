@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 import Layout from "../layouts/Layout.astro";
 import Slider from "../components/Slider_old";
@@ -69,3 +70,76 @@ import Galeria from "../components/Galeria.astro";
     <Slider client:load />
   </div>
 </Layout>
+=======
+---
+import Layout from "../layouts/Layout.astro";
+import Slider from "../components/Slider_old";
+import Galeria from "../components/Galeria.astro";
+---
+
+<Layout title="Bienvenido" showHeader={true}>
+  <div class="flex flex-col lg:flex-row lg:space-x-8">
+    <div class="w-full lg:w-1/2 pr-0 lg:pr-8 mb-8 lg:mb-0">
+      <h2
+        class="py-8 mb-4 text-center text-2xl lg:text-3xl tracking-tight font-extrabold text-white"
+      >
+        ¿QUIÉNES SOMOS?
+      </h2>
+      <p class="mb-4 text-justify text-sm lg:text-base">
+        En Barber Shop Las Torres, somos más que una simple barbería. Con 15
+        años de experiencia en el sector, hemos perfeccionado el arte de la
+        peluquería masculina.
+      </p>
+      <p class="mb-4 text-justify text-sm lg:text-base">
+        Nuestro equipo de profesionales altamente capacitados se dedica a
+        proporcionar un servicio excepcional, asegurando que cada cliente se
+        sienta valorado y bien cuidado.
+      </p>
+      <p class="mb-4 text-justify text-sm lg:text-base">
+        Nos enorgullece ofrecer una amplia gama de servicios, desde cortes de
+        pelo clásicos hasta los últimos estilos y tendencias.
+      </p>
+      <p class="mb-4 text-justify text-sm lg:text-base">
+        Utilizamos solo los mejores productos en el mercado para garantizar
+        resultados de alta calidad. Ven y experimenta la diferencia en Barber
+        Shop Las Torres.
+      </p>
+      <p class="mb-4 text-justify text-sm lg:text-base">
+        Te esperamos para ofrecerte una experiencia de peluquería inigualable.
+        😊
+      </p>
+    </div>
+    <div class="flex flex-col w-full lg:w-1/2 pr-0 lg:pr-8 mb-8 lg:mb-0">
+      <h2
+        class="py-8 mb-4 text-center text-2xl lg:text-3xl tracking-tight font-extrabold text-white"
+      >
+        ¿DÓNDE ESTAMOS?
+      </h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.7171700814356!2d-0.888420525017273!3d41.640244480274525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd59153d3c684777%3A0x142107f0ca91082a!2sBarbershop%20Las%20Torres!5e0!3m2!1ses!2ses!4v1706980587674!5m2!1ses!2ses"
+        width="100%"
+        height="375"
+        class="lg:w-auto"></iframe>
+    </div>
+  </div>
+  <div class="w-full flex flex-col justify-center items-center">
+    <h2
+      class="py-8 mt-8 text-center text-2xl lg:text-3xl tracking-tight font-extrabold text-white"
+    >
+      NUESTROS TRABAJOS
+    </h2>
+    <Galeria />
+  </div>
+
+  <div class="w-full flex flex-col justify-center items-center">
+    <h2
+      class="py-8 mt-8 text-center text-2xl lg:text-3xl tracking-tight font-extrabold text-white"
+    >
+      NUESTROS SERVICIOS
+    </h2>
+  </div>
+  <div class="sm:m-8 md:m-28 lg:m-28">
+    <Slider client:load />
+  </div>
+</Layout>
+>>>>>>> e6fd68155ffec9042f985c5cda4d3b777f6188c6
