@@ -28,7 +28,7 @@
 │ ├── components/ # Header, Galería, Listado de citas…
 │ ├── layouts/ # Layout principal
 │ ├── pages/ # index.astro, pedirCita.astro, verCitas.astro
-│ └── css/ # Estilos específicos de Galería
+│ └── css/ # Estilos específicos de la galería
 ├── astro.config.mjs # Configuración Astro + Tailwind
 ├── tailwind.config.mjs
 ├── tsconfig.json
