@@ -24,16 +24,55 @@
 
 ```bash
 /
-├── public/ # Assets estáticos (img, logo, favicons)
+├── astro.config.mjs
+├── package.json
+├── package-lock.json
+├── public/
+│ ├── favicon.svg
+│ └── img/
+│ ├── 404.gif
+│ ├── instagram.png
+│ ├── logo.jpg
+│ └── estilos/
+│ ├── img-1.jpg
+│ ├── img-2.jpg
+│ ├── img-3.jpg
+│ ├── img-4.jpg
+│ ├── img-5.jpg
+│ ├── img-6.jpg
+│ ├── img-7.jpg
+│ ├── img-8.jpg
+│ ├── img-9.jpg
+│ ├── img-10.jpg
+│ ├── img-11.jpg
+│ ├── img-12.jpg
+│ ├── img-13.jpg
+│ ├── img-14.jpg
+│ ├── img-15.jpg
+│ ├── img-16.jpg
+│ └── img-17.jpg
+├── README.md
 ├── src/
-│ ├── components/ # Header, Galería, Listado de citas…
-│ ├── layouts/ # Layout principal
-│ ├── pages/ # index.astro, pedirCita.astro, verCitas.astro
-│ └── css/ # Estilos específicos de la galería
-├── astro.config.mjs # Configuración Astro + Tailwind
+│ ├── components/
+│ │ ├── CalendarSwitcher.jsx
+│ │ ├── Galeria.astro
+│ │ ├── Header.astro
+│ │ ├── HeaderButton.astro
+│ │ ├── ListadoCitas.astro
+│ │ ├── Slider_cambios.jsx
+│ │ └── Slider_old.jsx
+│ ├── css/
+│ │ └── Galeria.css
+│ ├── env.d.ts
+│ ├── layouts/
+│ │ └── Layout.astro
+│ └── pages/
+│ ├── 404.astro
+│ ├── index.astro
+│ ├── pedirCita.astro
+│ └── verCitas.astro
 ├── tailwind.config.mjs
-├── tsconfig.json
-└── README.md
+└── tsconfig.json
 ```
 
 ---
